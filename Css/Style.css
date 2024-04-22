@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(32, 33, 36);
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+    color: rgba(226, 26, 26, 0.987);
+    text-align: center;
+    font-size:26px;
+    /* margin: 5px 250px; */
+    mix-blend-mode:lighten;
+    text-shadow: 1px 2px  rgb(19, 120, 160);
+    
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 380px;
+    margin: 50px auto;
+    background-color: rgb(32, 33, 36);
+    border: 5px solid white;
+    border-radius: 15px;
+    box-shadow: 9px 5px 12px green;
+}
+.button-grid{
+    display: grid;
+    flex-grow: 3;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+}
+input{
+    flex-grow: 1;
+    background-color: rgb(32, 33, 36);
+    color:white;
+    text-align: right;
+    font-size:50px;
+    outline: none;
+    border: 0px;
+    padding: 0px 16px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 60%;
+    
+    width: 80%;
+    height: 85%;
+    font-size: 20px;
+    background-color: #505050;
+    color: whitesmoke;
+    place-self: center;
+}
+
+.grey-button{
+    background-color: rgb(183, 178, 178);
+
+}
+
+.yellow-btn{
+    background-color: rgb(240, 194, 55);
+
+}
+.zero{
+    grid-column: span 2;
+    border-radius: 70px;
+    width: 90%;
+}
+
+button:hover{
+    border-radius: 50% 10%;
+
+    box-shadow: 3px 2px 3px red;
+}
